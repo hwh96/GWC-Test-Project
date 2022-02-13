@@ -4,15 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "pg": "^8.7.3",
-    "sequelize": "^6.16.1"
+    "sequelize": "^6.16.1",
+    "twitter-api-v2": "^1.10.3",
+    "twitter-v2": "^1.1.0"
   },
   "devDependencies": {
     "sequelize-cli": "^6.4.1"
