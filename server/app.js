@@ -6,7 +6,7 @@ const tweetController = require('./controllers/twitter-controller');
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.get('/', tweetController.getEwlonTweet);
+app.get('/elon', tweetController.getEwlonTweet);
 
 app.listen(port, () => {
     console.log(`Elon Tweets at http://localhost:${port}`)
