@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const tweetController = require('./controllers/twitter-controller');
+app.use(cors());
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.get('/', tweetController.getEwlonTweet);
 
