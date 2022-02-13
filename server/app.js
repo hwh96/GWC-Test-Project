@@ -6,6 +6,9 @@ const tweetController = require('./controllers/twitter-controller');
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 app.get('/elon', tweetController.getEwlonTweet);
 
 app.listen(port, () => {
